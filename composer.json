@@ -1,0 +1,35 @@
+{
+    "name": "herode/amana",
+    "description": "Dashboard uploads and downloads app managements",
+    "type": "library",
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BinhNguyen",
+            "email": "binhnx.it@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Herode\\Amana\\": "src/"
+      }
+    },
+    "extra": {
+      "branch-alias": {
+        "dev-master": "1.0-dev"
+      },
+      "laravel": {
+        "providers": [
+          "Herode\\Amana\\AmanaServiceProvider"
+        ],
+        "aliases": {
+          "Amana": "Herode\\Amana\\Amana"
+        }
+      }
+    },
+    "minimum-stability": "dev"
+}
