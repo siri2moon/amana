@@ -1,5 +1,8 @@
 # App Version Managements (IOS, Android) Laravel 5.8
 
+![Amana Downloads Page](img1.png)
+
+![Amana Uploads Page](img2.png)
 ## Install 
 Require this package with composer using the following command: <br>
 `composer require herode/amana`
