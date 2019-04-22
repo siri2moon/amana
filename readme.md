@@ -107,3 +107,10 @@ Open file `app\amana.php`
     ]
 
 ```
+
+## Gitignore
+
+Add `public/amanas` into `.gitignore` file in root project
+
+
+## License
