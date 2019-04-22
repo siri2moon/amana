@@ -1,4 +1,4 @@
-# App managements (IOS, Android) Laravel 5.8
+# App Version Managements (IOS, Android) Laravel 5.8
 
 ## Install 
 Require this package with composer using the following command: <br>
@@ -7,6 +7,20 @@ Require this package with composer using the following command: <br>
 After updating composer, You can also publish the config file, migrations file, public ... via command
 
 `php artisan amana:install`
+
+Next, run migrations
+
+`php artisan migrate`
+
+Clear config
+
+`php artisan config:cache`
+
+or
+
+`php artisan config:clear`
+
+Done, we can access `domain.com/amana`
 
 ## Configure
 
