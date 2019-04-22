@@ -173,8 +173,8 @@
                 this.loading = false
                 if (res.data.status) {
                   success('Uploaded successfully!!!')
-                  this.onReset()
                   this.errors.clear()
+                  this.$router.push('downloads')
                 } else {
                   error('Error happen, please reload page and try again')
                 }

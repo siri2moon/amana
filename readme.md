@@ -12,13 +12,23 @@ Next, run migrations
 
 `php artisan migrate`
 
+Add config disk storage, open file: `config/filesystems.php`, add this line bellow
+
+```$xslt
+  'disks' => [
+        ...
+        'amana' => [
+            'driver' => 'local',
+            'root'   => public_path('amanas')
+        ],
+  ]
+```
+
 Clear config
 
 `php artisan config:cache`
 
-or
-
-`php artisan config:clear`
+`composer dump-autoload`
 
 Done, we can access `domain.com/amana`
 
@@ -33,7 +43,7 @@ Open file `app\amana.php`
     | Amana Domain
     |--------------------------------------------------------------------------
     |
-    | This is the subdomain where Horizon will be accessible from. If this
+    | This is the subdomain where Amana will be accessible from. If this
     | setting is null, Amana will reside under the same domain as the
     | application. Otherwise, this value will serve as the subdomain.
     |
@@ -69,7 +79,7 @@ Open file `app\amana.php`
     | Amana Route Middleware
     |--------------------------------------------------------------------------
     |
-    | These middleware will get attached onto each Horizon route, giving you
+    | These middleware will get attached onto each Amana route, giving you
     | the chance to add your own middleware to this list or change any of
     | the existing middleware. Or, you can simply stick with this list.
     |

@@ -7,7 +7,7 @@ return [
     | Amana Domain
     |--------------------------------------------------------------------------
     |
-    | This is the subdomain where Horizon will be accessible from. If this
+    | This is the subdomain where Amana will be accessible from. If this
     | setting is null, Amana will reside under the same domain as the
     | application. Otherwise, this value will serve as the subdomain.
     |
@@ -33,7 +33,7 @@ return [
     | Amana Route Middleware
     |--------------------------------------------------------------------------
     |
-    | These middleware will get attached onto each Horizon route, giving you
+    | These middleware will get attached onto each Amana route, giving you
     | the chance to add your own middleware to this list or change any of
     | the existing middleware. Or, you can simply stick with this list.
     |
